@@ -1,0 +1,48 @@
+{
+    "detection": {
+        "model_path": "dursk.onnx",
+        "input_width": 320,
+        "input_height": 320,
+        "confidence_threshold": 0.5,
+        "iou_threshold": 0.45,
+        "class_names": [
+            "target"
+        ],
+        "use_gpu": false,
+        "num_threads": 4
+    },
+    "mouse": {
+        "move_duration": 0.15,
+        "smooth_movement": true,
+        "target_class_ids": [
+            0
+        ],
+        "click_on_detect": false,
+        "click_delay": 0.05,
+        "fov_radius": 0,
+        "aim_offset_x": 0,
+        "aim_offset_y": 0,
+        "aim_at_top": false,
+        "enabled": true,
+        "movement_type": "gamepad",
+        "gamepad_max_offset_px": 400,
+        "gamepad_deadzone": 0.08,
+        "gamepad_gain": 1.6,
+        "lock_radius_px": 250,
+        "self_exclude_px": 90
+    },
+    "capture": {
+        "monitor_index": 1,
+        "capture_fps": 240,
+        "region": [
+            800,
+            380,
+            320,
+            320
+        ]
+    },
+    "auto_start_on_load": false,
+    "last_model": "dursk.onnx",
+    "overlay_on": true,
+    "overlay_clear": true
+}
